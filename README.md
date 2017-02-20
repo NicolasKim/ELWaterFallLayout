@@ -61,7 +61,7 @@ return height
 
 
 ## Result
-
+![image](https://github.com/NicolasKim/ELWaterFallLayout/blob/master/screenshot.gif)
 
 
 ## Author
