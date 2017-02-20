@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/jinqiucheng1006@live.cn/ELWaterFallLayout'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jinqiucheng1006@live.cn' => 'jinqiucheng@autohome.com.cn' }
-  s.source           = { :git => 'https://github.com/jinqiucheng1006@live.cn/ELWaterFallLayout.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/NicolasKim/ELWaterFallLayout.git', :tag => s.version.to_s }
   s.social_media_url = 'http://www.jianshu.com/u/62fd4a3ecff1'
   s.ios.deployment_target = '8.0'
   s.source_files = 'ELWaterFallLayout/Classes/*.swift'
