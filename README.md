@@ -13,16 +13,59 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-ELWaterFallLayout is available through [CocoaPods](http://cocoapods.org). To install
+ELWaterFallLayout is available through [CocoaPods]([http://cocoapods.org](http://cocoapods.org)). To install
+
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod "ELWaterFallLayout"
 ```
 
+
+
+## Usage
+
+```
+import ELWaterFallLayout
+```
+
+
+
+```swift
+lazy var flowLayout : ELWaterFlowLayout = ELWaterFlowLayout()
+collectionView = UICollectionView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: self.view.frame.size.width, height: self.view.frame.size.height - 200)) , collectionViewLayout:flowLayout)
+collectionView.backgroundColor = UIColor.white
+collectionView.delegate = self
+collectionView.dataSource = self
+self.flowLayout.delegate = self
+flowLayout.lineCount = 10//十列
+flowLayout.vItemSpace = 10//水平间距10
+flowLayout.hItemSpace = 10//水平间距10
+flowLayout.hItemSpace = 10//水平间距10
+flowLayout.edge = UIEdgeInsets.zero
+collectionView.register(TestCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+self.view.addSubview(collectionView)
+
+```
+
+
+
+### delegate protocol
+
+```swift
+func el_flowLayout(_ flowLayout: ELWaterFlowLayout, heightForRowAt index: Int) -> CGFloat {
+//do something for the cell height
+return height
+}
+```
+
+
+
+
+
 ## Author
 
-jinqiucheng1006@live.cn, jinqiucheng@autohome.com.cn
+jinqiucheng1006@live.cn
 
 ## License
 
