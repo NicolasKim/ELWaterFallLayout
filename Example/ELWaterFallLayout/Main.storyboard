@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WaterFlow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="b26-K8-8Yc">
+                                <rect key="frame" x="4" y="617" width="365" height="31"/>
+                                <connections>
+                                    <action selector="vSpaceChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="L8Y-ak-7zk"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Iwy-mZ-m4E">
+                                <rect key="frame" x="6" y="567" width="363" height="31"/>
+                                <connections>
+                                    <action selector="hSpaceChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="88J-JJ-U4Y"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="3ms-uJ-Wwh">
+                                <rect key="frame" x="6" y="517" width="363" height="31"/>
+                                <connections>
+                                    <action selector="lineCountChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="bmw-Kd-AJW"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Iwy-mZ-m4E" secondAttribute="trailing" constant="8" id="5Xc-8x-Bry"/>
+                            <constraint firstAttribute="trailing" secondItem="3ms-uJ-Wwh" secondAttribute="trailing" constant="8" id="BIb-XC-cpi"/>
+                            <constraint firstItem="b26-K8-8Yc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="6" id="KNh-lf-GeN"/>
+                            <constraint firstItem="3ms-uJ-Wwh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="S5i-DM-Jh8"/>
+                            <constraint firstAttribute="trailing" secondItem="b26-K8-8Yc" secondAttribute="trailing" constant="8" id="fwO-H5-XoM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="b26-K8-8Yc" secondAttribute="bottom" constant="20" id="l9S-oS-3tD"/>
+                            <constraint firstItem="Iwy-mZ-m4E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="sOg-dS-81O"/>
+                            <constraint firstItem="b26-K8-8Yc" firstAttribute="top" secondItem="Iwy-mZ-m4E" secondAttribute="bottom" constant="20" id="u2l-Qa-Mu4"/>
+                            <constraint firstItem="Iwy-mZ-m4E" firstAttribute="top" secondItem="3ms-uJ-Wwh" secondAttribute="bottom" constant="20" id="z0Q-WV-yMF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

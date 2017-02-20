@@ -1,0 +1,16 @@
+PODS:
+  - ELWaterFallLayout (0.1.0)
+
+DEPENDENCIES:
+  - ELWaterFallLayout (from `../`)
+
+EXTERNAL SOURCES:
+  ELWaterFallLayout:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ELWaterFallLayout: 454418f40e06f5c9e397e38ba1ff80a20d031572
+
+PODFILE CHECKSUM: 737f60b3c3bfedbacec94575e19e93955c085b2b
+
+COCOAPODS: 1.1.1
