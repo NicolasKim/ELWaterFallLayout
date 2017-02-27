@@ -30,35 +30,11 @@ class ViewController: UIViewController ,UICollectionViewDelegate , UICollectionV
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupView()
-        
-        
-//        let deadlineTime = DispatchTime.now() + .seconds(3)
-//        DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
-//            self.flowLayout.edge = UIEdgeInsetsMake(10, 10, 10, 30)
-//            self.flowLayout.lineCount = 2
-//            self.flowLayout.vItemSpace = 30
-//        }
-//        
-//        
-//        
-//        let deadlineTime2 = DispatchTime.now() + .seconds(6)
-//        DispatchQueue.main.asyncAfter(deadline: deadlineTime2) {
-//            self.flowLayout.edge = UIEdgeInsetsMake(10, 10, 10, 30)
-//            self.flowLayout.lineCount = 1
-//            self.flowLayout.vItemSpace = 30
-//        }
-        
-        
+
     }
     
 
     fileprivate func setupView() {
-        
-        
-        
-        
-        
-        
         collectionView = UICollectionView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: self.view.frame.size.width, height: self.view.frame.size.height - 200)) , collectionViewLayout:self.flowLayout)
         collectionView.backgroundColor = UIColor.white
         collectionView.delegate = self

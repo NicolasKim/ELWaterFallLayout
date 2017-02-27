@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ELWaterFallLayout'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A simple UICollectionFlowLayout of Waterfall effective.'
   s.description      = <<-DESC
                        This flowlayout can config horizontal/vertical item space、section space linecount at realtime
