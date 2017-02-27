@@ -33,14 +33,14 @@ import ELWaterFallLayout
 
 ```swift
 lazy var flowLayout : ELWaterFlowLayout = ELWaterFlowLayout()
+flowLayout.scrollDirection = .horizontal //.vertical
 collectionView = UICollectionView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: self.view.frame.size.width, height: self.view.frame.size.height - 200)) , collectionViewLayout:flowLayout)
 collectionView.backgroundColor = UIColor.white
 collectionView.delegate = self
 collectionView.dataSource = self
 self.flowLayout.delegate = self
 flowLayout.lineCount = 10//十列
-flowLayout.vItemSpace = 10//水平间距10
-flowLayout.hItemSpace = 10//水平间距10
+flowLayout.vItemSpace = 10//垂直间距10
 flowLayout.hItemSpace = 10//水平间距10
 flowLayout.edge = UIEdgeInsets.zero
 collectionView.register(TestCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
