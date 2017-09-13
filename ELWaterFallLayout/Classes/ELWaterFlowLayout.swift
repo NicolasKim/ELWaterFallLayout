@@ -96,6 +96,7 @@ open class ELWaterFlowLayout: UICollectionViewFlowLayout {
         super.prepare()
         resetLineWidth()
         resetLineHeight()
+        attrArr.removeAll()
 
         if let sectionCount = self.collectionView?.dataSource?.numberOfSections!(in: self.collectionView!) {
             for section in 0..<sectionCount{
